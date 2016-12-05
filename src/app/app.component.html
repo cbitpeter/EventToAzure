@@ -1,3 +1,20 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <h1>
+    {{title}}
+  </h1>
+  <table id = "events" class="table table-bordered col-sm-12">
+    <tr>
+      <th class="text-center">Event Date</th>
+      <th class="text-center">From</th>
+      <th class="text-center">Until</th>
+      <th class="text-center">Activity</th>
+    </tr>
+    <tr *ngFor="let e of this.events;">
+      <td class="text-center">{{e.fromDate}}</td>
+      <td class="text-center">{{e.timeStart}}</td>
+      <td class="text-center">{{e.timeFinish}}</td>
+      <td>{{e.activityItem}}</td>
+    </tr>
+  </table>
+</div>
+<script></script>
