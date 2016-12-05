@@ -11,7 +11,7 @@ import { EventserviceService } from './Eventservice.service'
   providers: [EventserviceService]
 })
 export class AppComponent {
-  title = 'Events';
+  title = 'Event Contents';
   activities: Activity[];
   events: Event[];
 
